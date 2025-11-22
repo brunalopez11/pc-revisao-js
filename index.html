@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Manipulação de Eventos</h1>
+
+    <div id="caixa" style="width: 200px; height: 100px; background-color: blueviolet;"></div>
+    <p id="mensagem"></p>
+
+    <script>
+
+    let caixa = document.getElementById("caixa");
+    let mensagem = document.getElementById("mensagem");
+
+    caixa.addEventListener("mouseover", function() {
+        mensagem.innerText = "Mouse detectado!";
+    });
+
+    caixa.addEventListener("mouseout", function() {
+        mensagem.innerText = "";
+    });
+
+    </script>
+
+</body>
+</html>
+
+
+<!-- 
+        // function name(params) {}  função normal
+
+        // function(){} anonima
+
+        // () => {} arrow  -->
